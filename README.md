@@ -5,4 +5,10 @@
 ## 使用 CDN 加速资源
 - 使用 CDN 加速静态资源以提高加载速度
 - 使用 jsdelivr CDN
-- 地址：[https://www.jsdelivr.com/](https://www.jsdelivr.com/ "jsdelivr")
+- 官网：[https://www.jsdelivr.com/](https://www.jsdelivr.com/ "jsdelivr")
+- 地址：[https://cdn.jsdelivr.net/gh/NULL-LC/null-lc.github.io@master/](https://cdn.jsdelivr.net/gh/NULL-LC/null-lc.github.io@master/ "null-lc.github.io@master")
+
+## 同步项目到 Vercel
+- 同步项目到 Vercel 提高在国内的加载速度
+- 官网：[https://vercel.com/](https://vercel.com/ "Vercel")
+- 地址：[https://lc-gh.vercel.app/](https://lc-gh.vercel.app/ "lc-gh")
