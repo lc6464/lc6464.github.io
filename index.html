@@ -10,14 +10,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style/new.css" />
 	<link rel="stylesheet" href="css/footer/new.css" />
-	<style> @keyframes flashing { from { opacity: 1; } to { opacity: 0; } } header { animation: flashing 2s linear infinite alternate; }</style>
+	<script src="js/stayTime.js"></script>
+	<style> @keyframes flashing { from { opacity: 1; } to { opacity: 0; } } header { animation: flashing 2s linear infinite alternate; } </style>
 </head>
 <body>
 	<header><h1>LC 使用 GitHub pages 建立的网站！</h1></header>
 	<main>
 		<h2>正在建设中……</h2>
 		<p>去LC的网站看看？ <a href="//lcwebsite.cn/" title="Go to lcwebsite!">Go!</a></p>
+		<div>您已在本页停留<span id="stayHour">0</span>时<span id="stayMin">0</span>分<span id="staySec">0</span>.<span id="stayMs">0</span>秒</div>
 		<img src="favicon.svg" alt="LC" title="LC" />
+		<script>
+			var stayHour = document.querySelector('#stayHour'), stayMin = document.querySelector('#stayMin'),
+				staySec = document.querySelector('#staySec'), stayMs = document.querySelector('#stayMs'),
+			stayRefresh = setInterval(function(){ var stay = stayTime(); stayHour.innerText = stay[0]; stayMin.innerText = stay[1];
+				staySec.innerText = stay[2]; stayMs.innerText = stay[3]; }, 500);
+		</script>
 	</main>
 	<footer>
 		<div class="license">
