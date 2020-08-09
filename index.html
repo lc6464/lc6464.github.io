@@ -10,7 +10,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/style/new.css" />
 	<link rel="stylesheet" href="css/footer/new.css" />
-	<script src="js/stayTime.js"></script>
+	<script src="js/timer.js"></script>
+	<script> var time = new Timer; </script>
 	<style> @keyframes flashing { from { opacity: 1; } to { opacity: 0; } } header { animation: flashing 2s linear infinite alternate; } </style>
 </head>
 <body>
@@ -18,13 +19,13 @@
 	<main>
 		<h2>正在建设中……</h2>
 		<p>去LC的网站看看？ <a href="//lcwebsite.cn/" title="Go to lcwebsite!">Go!</a></p>
-		<div>您已在本页停留<span id="stayHour">0</span>时<span id="stayMin">0</span>分<span id="staySec">0</span>.<span id="stayMs">0</span>秒</div>
+		<div>您已在本页停留<span id="stayHour">0</span>时<span id="stayMin">0</span>分<span id="staySec">0</span>秒</div>
 		<img src="favicon.svg" alt="LC" title="LC" />
 		<script>
 			var stayHour = document.querySelector('#stayHour'), stayMin = document.querySelector('#stayMin'),
 				staySec = document.querySelector('#staySec'), stayMs = document.querySelector('#stayMs'),
-			stayRefresh = setInterval(function(){ var stay = stayTime(); stayHour.innerText = stay[0]; stayMin.innerText = stay[1];
-				staySec.innerText = stay[2]; stayMs.innerText = stay[3]; }, 500);
+			stayRefresh = setInterval(function(){ var stay = time.timing(); stayHour.innerText = stay[0]; stayMin.innerText = stay[1];
+				staySec.innerText = stay[2]; }, 500);
 		</script>
 	</main>
 	<footer>
