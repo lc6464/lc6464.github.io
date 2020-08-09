@@ -11,21 +11,24 @@
 	<link rel="stylesheet" href="css/style/new.css" />
 	<link rel="stylesheet" href="css/footer/new.css" />
 	<script src="js/timer.js"></script>
-	<script> var time = new Timer; </script>
+	<script> var time = new Timer(); </script>
 	<style> @keyframes flashing { from { opacity: 1; } to { opacity: 0; } } header { animation: flashing 2s linear infinite alternate; } </style>
 </head>
 <body>
 	<header><h1>LC 使用 GitHub pages 建立的网站！</h1></header>
 	<main>
 		<h2>正在建设中……</h2>
-		<p>去LC的网站看看？ <a href="//lcwebsite.cn/" title="Go to lcwebsite!">Go!</a></p>
-		<div>您已在本页停留<span id="stayHour">0</span>时<span id="stayMin">0</span>分<span id="staySec">0</span>秒</div>
+		<h3>去LC的网站看看？ <a href="//lcwebsite.cn/" title="Go to lcwebsite!">Go!</a></h3>
+		<div>您已在本页停留<span id="stayHour">0</span>时<span id="stayMin">0</span>分<span id="staySec">0</span>秒<button id="reset">重置计时</button></div>
 		<img src="favicon.svg" alt="LC" title="LC" />
 		<script>
 			var stayHour = document.querySelector('#stayHour'), stayMin = document.querySelector('#stayMin'),
 				staySec = document.querySelector('#staySec'), stayMs = document.querySelector('#stayMs'),
-			stayRefresh = setInterval(function(){ var stay = time.timing(); stayHour.innerText = stay[0]; stayMin.innerText = stay[1];
-				staySec.innerText = stay[2]; }, 500);
+				stayRefresh = setInterval(function () {
+					var stay = time.timing(); stayHour.innerText = stay[0]; stayMin.innerText = stay[1];
+					staySec.innerText = stay[2];
+				}, 500);
+			document.querySelector('#reset').onclick = function () { time.reset(); };
 		</script>
 	</main>
 	<footer>
@@ -33,9 +36,7 @@
 			此网站使用<a title="Apache License 2.0" rel="nofollow noopener noreferrer" href="//www.apache.org/licenses/LICENSE-2.0"> Apache License 2.0 </a>，
 			<a rel="nofollow noopener noreferrer" title="查看 License" href="LICENSE">点击查看 License</a>。
 		</div>
-		<div class="readme">
-			<a title="查看 README.md" rel="nofollow noopener noreferrer" href="README.md">点击查看 README.md </a>
-		</div>
+		<div class="readme"><a title="查看 README.md" rel="nofollow noopener noreferrer" href="README.md">点击查看 README.md </a></div>
 		<div class="cr">Copyright © 2020 LC. All rights reserved. &nbsp; LC 版权所有</div>
 	</footer>
 </body>
