@@ -1,0 +1,9 @@
+html { text-align: center; }
+h1 { font-size: 3rem; margin: 0; }
+header { margin: 0.6rem 0 1rem; }
+main { margin: 1.5rem 0 2.5rem; }
+h2 { margin: 0 0 0.6rem; }
+ul { list-style: none; padding: 0 0.2rem; margin: 0; }
+li { margin: 0 auto 1.4rem; max-width: 55rem; }
+main a { display: block; padding: 0.5rem 0.8rem; border-radius: 1rem; border: solid 0.08rem #BBB; background: rgba(100, 190, 255, 0.1); }
+a { text-decoration: none; }
