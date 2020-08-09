@@ -1,0 +1,11 @@
+body::before { content: "-"; display: block; height: 3rem; opacity: 0; }
+nav {
+	text-align: left; position: fixed; left: 0; top: 0; width: 100%; z-index: 107; user-select: none;
+	background: #252525; border-radius: 0 0 1rem 1rem; border: 0.02rem solid #999; font-size: 2rem;
+}
+#logo, #navLinks, #navLinks a, #logoText { display: inline-block; }
+#logoLink { color: white; text-decoration: none; line-height: 3rem; background: none; }
+#logoText { line-height: 3rem; font-size: 1.8rem; }
+#logoImg { vertical-align: top; height: 3rem; margin: 0 0.6rem; }
+#navLinks { float: right; }
+#navLinks a { line-height: 3rem; font-size: 1.6rem; padding: 0 0.4rem; text-decoration: underline; }

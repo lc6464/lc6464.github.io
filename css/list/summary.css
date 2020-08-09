@@ -1,0 +1,6 @@
+html { text-align: center; }
+header, h1 { font-size: 3rem; margin: 0.5rem 0 0.6rem; }
+main { margin: 1rem 0 2rem; }
+ul { list-style-type: none; margin: 0; padding: 0; }
+main a { display: inline-block; border-radius: 1rem; border: 0.06rem solid #DDD; text-decoration: none; padding: 0.5rem 1rem; margin: 0.5rem 0; width: 85%; max-width: 55rem; background: rgba(100, 190, 255, 0.08); }
+main li { font-size: 1.2rem; }
