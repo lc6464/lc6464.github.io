@@ -6,9 +6,10 @@
 
 ## 使用 CDN 加速资源
 - 使用 CDN 加速静态资源以提高加载速度
+- CDN数据：[![图片无法加载！](https://data.jsdelivr.com/v1/package/gh/lc6464/lc6464.github.io/badge "CDN 数据")](https://www.jsdelivr.com/package/gh/lc6464/lc6464.github.io)
 - 使用 [jsdelivr](https://www.jsdelivr.com/ "jsdelivr") CDN
 - 官网：[https://www.jsdelivr.com/](https://www.jsdelivr.com/ "jsdelivr")
-- 地址：[https://cdn.jsdelivr.net/gh/lc6464/lc6464.github.io@master/](https://cdn.jsdelivr.net/gh/lc6464/lc6464.github.io@master/ "lc6464.github.io@master")
+- 地址：[https://cdn.jsdelivr.net/gh/lc6464/lc6464.github.io/](https://cdn.jsdelivr.net/gh/lc6464/lc6464.github.io/ "lc6464.github.io")
 
 ## 同步项目到 Vercel
 - 同步项目到 Vercel 提高在国内的加载速度
@@ -29,7 +30,8 @@
   - [FireFox 75+](https://www.firefox.com.cn/ "FireFox 介绍页")
   - Safari 10+
 - 已使用的新技术：
-  - 函数 Date.now
-    - js/timer.js
-  - 关键字 类声明 class
-    - js/timer.js
+  - 函数 [Date.now](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/now "Date.now [MDN]")
+    - [js/timer.js](js/timer.js "timer.js")
+  - 关键字 类声明 [class](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/class "class [MDN]")
+    - [js/timer.js](js/timer.js "timer.js")（声明）
+    - [js/stay.js](js/stay.js "stay.js")（使用）
