@@ -1,7 +1,3 @@
 footer { text-align: center; font-family: KaiTi, 'Microsoft YaHei'; background: #282828; margin: 2rem 0 0.4rem; padding: 1rem 0 0.6rem; border-radius: 0.6rem; }
 .cr { padding: 0.3rem 0; font-size: 1.15rem; }
-[href^="http://www.beian.gov.cn/"]:link, [href^="http://www.beian.gov.cn/"]:visited, [href^="http://www.beian.gov.cn/"]:hover, [href^="http://www.beian.gov.cn/"]:active {
-	background: none;
-	color: #CCC;
-	text-decoration: none;
-}
+[href^="http://www.beian.gov.cn/"]:link, [href^="http://www.beian.gov.cn/"]:visited, [href^="http://www.beian.gov.cn/"]:hover, [href^="http://www.beian.gov.cn/"]:active { background: none; color: #CCC; text-decoration: none; }

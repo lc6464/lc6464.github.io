@@ -1,6 +1,6 @@
 html { font-size: 1.2rem; background: #111; color: white; font-family: KaiTi, "Microsoft YaHei"; }
 body { margin: 0 0.25rem; }
-img, audio, video, object, iframe, button, embed, input, textarea { vertical-align: middle; }
+img, audio, video, object, iframe, button, embed, input, textarea, svg { vertical-align: middle; }
 a:link, a:visited { color: white; }
 a:hover { background: rgba(100, 190, 255, 0.4); }
 a:active { color: black; background: #82C3FF; }
