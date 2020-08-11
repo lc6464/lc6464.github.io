@@ -1,6 +1,7 @@
 # LC 使用 GitHub Pages 创建的网站
-## LC 使用 GitHub Pages 创建的网站
-- 地址：[https://lc6464.github.io/](https://lc6464.github.io/ "LC 的 GitHub Pages 网站")
+## 网站
+- 地址：[https://lc6464.github.io/](https://lc6464.github.io/ "GitHub Pages")
+- 地址：[https://lc-gh.vercel.app/](https://lc-gh.vercel.app/ "Vercel")
 > Copyright © 2020 LC. All rights reserved.   LC 版权所有
 
 ## 使用 CDN 加速资源
@@ -12,9 +13,23 @@
 ## 同步项目到 Vercel
 - 同步项目到 Vercel 提高在国内的加载速度
 - 官网：[https://vercel.com/](https://vercel.com/ "Vercel")
-- 地址：[https://lc-gh.vercel.app/](https://lc-gh.vercel.app/ "lc-gh")
+- 地址：[https://lc-gh.vercel.app/](https://lc-gh.vercel.app/ "lc-gh.vercel.app")
 
 ## 样式与主站保持一致
-- LC 的主站：[https://lcwebsite.cn/](https://lcwebsite.cn/ "lcwebsite")
+- LC 的主站：[https://lcwebsite.cn/](https://lcwebsite.cn/ "lcwebsite.cn")
 - 将 LC 的网站的 CSS 文件上传至 GitHub
-- 目前版本：2020-8-7 以及 2020-8-8 版本。
+- 目前版本：2020-8-7 以及 2020-8-11 版本。
+
+## 新特性、新技术
+- 请使用新版的现代浏览器访问此网站
+- 别用 IE 啦~ 已经过时了！
+- 建议使用以下浏览器及版本（链接均为对应浏览器的介绍页面，版本均为最新正式版本）：
+  - [Microsoft Edge Chromium 80+](https://www.microsoft.com/zh-cn/edge/ "Microsoft Edge 介绍页")
+  - [Google Chrome 80+](https://www.google.cn/chrome/ "Google Chrome 介绍页")
+  - [FireFox 75+](https://www.firefox.com.cn/ "FireFox 介绍页")
+  - Safari 10+
+- 已使用的新技术：
+  - 函数 Date.now
+    - js/timer.js
+  - 关键字 类声明 class
+    - js/timer.js

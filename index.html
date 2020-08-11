@@ -11,34 +11,39 @@
 	<link rel="stylesheet" href="css/style/new.css" />
 	<link rel="stylesheet" href="css/footer/new.css" />
 	<script src="js/timer.js"></script>
-	<script> var time = new Timer(); </script>
-	<style> @keyframes flashing { from { opacity: 1; } to { opacity: 0; } } header { animation: flashing 2s linear infinite alternate; } </style>
+	<script src="js/stay.js"></script>
+	<style>
+		/* @keyframes flashing { from { opacity: 1; } to { opacity: 0; } } */
+		header {/*animation: flashing 2s linear infinite alternate;*/text-align: center; font-size: 1.2rem; }
+		abbr { color: #4BF; }
+		#stay { margin: 0 0 0.5rem; }
+		#stay button { margin: 0 0 0 0.6rem; font-size: 0.8rem; }
+		#mainSite { display: inline-block; }
+		#mainSite:link svg, #mainSite:visited svg { color: #3BF; }
+		#mainSite:hover svg { color: white; }
+		#mainSite:active svg { color: black; }
+		#mainSite svg { width: 10rem; max-width: 80vw; transition: color 0.3s linear; }
+		.license { margin: 0.2rem 0; }
+	</style>
 </head>
 <body>
 	<header><h1>LC 的 GitHub Pages 网站！</h1></header>
 	<main>
-		<h2>正在建设中……</h2>
-		<h2>欢迎访问<a title="GitHub 仓库" href="//github.com/lc6464/lc6464.github.io">本 GitHub Pages 网站的仓库</a>！欢迎各位前来提出问题（Issues）和拉取请求（Pull Requests）！</h2>
-		<h3>去LC的网站看看？ <a href="//lcwebsite.cn/" title="Go to lcwebsite!">Go!</a></h3>
-		<div>您已在本页停留<span id="stayHour">0</span>时<span id="stayMin">0</span>分<span id="staySec">0</span>秒<button id="reset">重置计时</button></div>
-		<img src="favicon.svg" alt="LC" title="LC" />
-		<script>
-			var stayHour = document.querySelector('#stayHour'), stayMin = document.querySelector('#stayMin'),
-				staySec = document.querySelector('#staySec'), stayMs = document.querySelector('#stayMs'),
-				stayRefresh = setInterval(function () {
-					var stay = time.timing(); stayHour.innerText = stay[0]; stayMin.innerText = stay[1];
-					staySec.innerText = stay[2];
-				}, 500);
-			document.querySelector('#reset').onclick = function () { time.reset(); };
-		</script>
+		<h2 id="building">正在建设中……</h2>
+		<h2 id="repo">欢迎访问<a title="GitHub 仓库" href="//github.com/lc6464/lc6464.github.io">本网站的仓库</a>！<br/>欢迎各位前来提出<abbr title="Issue">问题</abbr>和<abbr title="Pull Request">拉取请求</abbr>！</h2>
+		<h3><a id="mainSite" href="//lcwebsite.cn/" title="Go to lcwebsite!">访问 LC 的主站！<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 256 256"><g fill="currentColor">
+			<path d="M109.1,213.4H9.3V43.2h36.3v140.5h63.6V213.4z"/>
+			<path d="M247.4,207.3c-12.4,6.1-28.5,9.1-48.4,9.1c-25.6,0-46-7.7-61-23c-15.1-15.3-22.6-35.8-22.6-61.4c0-26.9,8.4-48.9,25.2-66c16.8-17.1,38.5-25.7,65.1-25.7c16.6,0,30.5,2.2,41.7,6.5v35c-11.5-6.7-24.5-10.1-39.1-10.1c-16.6,0-29.9,5.3-39.9,15.9c-10,10.6-14.9,24.5-14.9,41.6c0,16.7,4.7,30.1,14.2,40.3c9.4,10.2,22.2,15.3,38.3,15.3c15.2,0,29-3.7,41.4-11V207.3z"/>
+		</g></svg></a></h3>
 	</main>
 	<footer>
+		<div id="stay">您已在本页停留 <span id="stayHour">0</span>时<span id="stayMin">0</span>分<span id="staySec">0</span>秒<button id="resetStay">重置计时</button></div>
 		<div class="license">
-			此网站使用<a title="Apache License 2.0" rel="nofollow noopener noreferrer" href="//www.apache.org/licenses/LICENSE-2.0"> Apache License 2.0 </a>，
-			<a rel="nofollow noopener noreferrer" title="查看 License" href="LICENSE">点击查看 License</a>。
+			此网站使用 <a title="Apache License 2.0" rel="nofollow noopener noreferrer" href="//www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>，<a rel="nofollow noopener noreferrer" title="查看 License" href="LICENSE">点击查看</a>。
 		</div>
 		<div class="readme"><a title="查看 README.md" rel="nofollow noopener noreferrer" href="README.md">点击查看 README.md </a></div>
 		<div class="cr">Copyright © 2020 LC. All rights reserved. &nbsp; LC 版权所有</div>
 	</footer>
+	<script> document.querySelectorAll('abbr').forEach(ele => ele.addEventListener('click', e => alert(ele.innerText + '\r\n' + ele.title) ) ); </script>
 </body>
 </html>
