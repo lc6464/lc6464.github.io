@@ -6,9 +6,9 @@ a:hover { background: rgba(100, 190, 255, 0.4); }
 a:active { color: black; background: #8CF; }
 a { transition: background 0.3s linear, color 0.3s linear; }
 header { margin: 1.5rem 0 2.5rem; }
-main { margin: 3rem 0; }
+main { margin: 2.5rem 0; }
 section { background: rgba(105, 180, 255, 0.08); margin: 0.5rem 0; padding: 0.8rem 0.4rem; border-radius: 1rem; }
-button { border: 0.02rem solid white; background: #252525; border-radius: 0.5rem; font-size: 0.9rem; color: white; padding: 0.2rem 0.4rem; }
+button { border: 0.02rem solid white; background: #252525; border-radius: 0.5rem; font-size: 0.9rem; color: white; padding: 0.2rem 0.4rem; cursor: pointer; }
 input, textarea { border-radius: 0.8rem; padding: 0.4rem 0.6rem; border: none; font-size: 1rem; background: #252525; color: white; max-width: 90vw; }
 code { box-sizing: border-box; max-width: 98vw; background: rgba(200, 200, 200, 0.08); font-family: Consolas, 'Courier New', monospace; padding: 0.5rem 1rem; display: inline-block; text-align: left; font-size: 0.8rem; white-space: pre-wrap; margin: 0.5rem 0; word-wrap: break-word; }
 .inline {  padding: 0.2rem 0.4rem; font-size: 1rem; }
