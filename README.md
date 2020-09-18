@@ -30,8 +30,5 @@
   - [FireFox 75+](https://www.firefox.com.cn/ "FireFox 介绍页")
   - Safari 10+
 - 已使用的新技术：
-  - 函数 [Date.now](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Date/now "Date.now [MDN]")
-    - [js/timer.js](js/timer.js "timer.js")
-  - 关键字 类声明 [class](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/class "class [MDN]")
-    - [js/timer.js](js/timer.js "timer.js")（声明）
+  - 关键字 类 [class](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/class "class [MDN]")
     - [js/stay.js](js/stay.js "stay.js")（使用）
