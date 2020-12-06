@@ -1,0 +1,60 @@
+name: Update CSS Daily
+on:
+    schedule:
+        - cron: '0 0 */1 * *'
+
+jobs:
+    update-css:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v2.0.0
+
+
+            - name: Download footer
+              uses: carlosperate/download-file-action@v1.0.0
+              with:
+                file-url: https://static.lcwebsite.cn/css/footer/new.css
+                file-name: new.css
+                location: ./css/footer/
+
+            - name: Download list detailed
+              uses: carlosperate/download-file-action@v1.0.0
+              with:
+                file-url: https://static.lcwebsite.cn/css/list/detailed.css
+                file-name: detailed.css
+                location: ./css/list/
+
+            - name: Download list summary
+              uses: carlosperate/download-file-action@v1.0.0
+              with:
+                file-url: https://static.lcwebsite.cn/css/list/summary.css
+                file-name: summary.css
+                location: ./css/list/
+
+            - name: Download nav
+              uses: carlosperate/download-file-action@v1.0.0
+              with:
+                file-url: https://static.lcwebsite.cn/css/nav/new.css
+                file-name: new.css
+                location: ./css/nav/
+
+            - name: Download style
+              uses: carlosperate/download-file-action@v1.0.0
+              with:
+                file-url: https://static.lcwebsite.cn/css/style/new.css
+                file-name: new.css
+                location: ./css/style/
+
+
+            - name: Commit
+              run: |
+                git config --local user.email "64722907+lc6464@users.noreply.github.com"
+                git config --local user.name "lc6464"
+                git add -A .
+                git commit -m "Auto update CSS at $(date)."
+
+            - name: Push
+              uses: ad-m/github-push-action@v0.5.0
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}

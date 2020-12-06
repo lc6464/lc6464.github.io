@@ -18,8 +18,8 @@
 
 ## 样式与主站保持一致
 - LC 的主站：[https://lcwebsite.cn/](https://lcwebsite.cn/ "lcwebsite.cn")
-- 将 LC 的网站的 CSS 文件上传至 GitHub
-- 目前版本：2020-8-7 以及 2020-8-22 版本。
+- 将 LC 的网站的 CSS 文件提交至仓库
+- 使用 GitHub Actions 进行每日自动更新
 
 ## 新特性、新技术
 - 请使用新版的现代浏览器访问此网站

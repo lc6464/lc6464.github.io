@@ -1,5 +1,5 @@
 (function ($) {
-	function getUrl(subURL) { return '//cdn.jsdelivr.net/gh/lc6464/lc6464.github.io@master/' + subURL; }
+	function getUrl(subURL) { return '//cdn.jsdelivr.net/gh/lc6464/lc6464.github.io@main/' + subURL; }
 	function getComUrl(subURL) { return getUrl(`components/${subURL}.html`); }
 	if ($) {
 		var $ = document.querySelector.bind(document), $$ = document.querySelectorAll.bind(document);
